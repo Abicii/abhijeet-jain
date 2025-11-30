@@ -27,9 +27,9 @@ const Experience: React.FC = () => {
                 <h2 className="text-sm font-bold tracking-widest text-accent uppercase mb-3">My Path</h2>
                 <h3 className="text-4xl md:text-5xl font-bold text-primary font-display">Experience</h3>
             </div>
-            <p className="text-secondary max-w-md mt-6 md:mt-0">
-                A timeline of my professional career, building products and leading teams across various industries.
-            </p>
+            {/* <p className="text-secondary max-w-md mt-6 md:mt-0">
+                A timeline of my professional career.
+            </p> */}
         </div>
 
         <div className="space-y-0">
