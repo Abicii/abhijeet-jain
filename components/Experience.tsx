@@ -42,14 +42,14 @@ const Experience: React.FC = () => {
               transition={{ delay: index * 0.1, duration: 0.6 }}
               className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 group"
             >
-              {/* Date Column (Desktop: Left, Mobile: Top) */}
-              <div className="md:col-span-3 md:text-right pt-2 md:pt-1">
-                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary/5 border border-primary/10 group-hover:border-accent/50 transition-colors duration-300">
+                {/* Date Column (Desktop: Left) */}
+                <div className="md:col-span-3 md:text-right pt-2 md:pt-1 hidden md:block">
+                  <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary/5 border border-primary/10 group-hover:border-accent/50 transition-colors duration-300">
                     <span className="font-mono text-xs text-accent font-bold tracking-widest uppercase">
-                        {exp.period}
+                      {exp.period}
                     </span>
-                 </div>
-              </div>
+                  </div>
+                </div>
 
               {/* Content Column with Border */}
               <div className="md:col-span-9 relative md:border-l md:border-primary/10 md:pl-10 pb-16 last:pb-0">
@@ -64,6 +64,14 @@ const Experience: React.FC = () => {
                 <div className="relative">
                     <h4 className="text-2xl font-bold text-primary mb-1 group-hover:text-accent transition-colors font-display">{exp.role}</h4>
                     <div className="text-primary/60 text-lg mb-6 font-medium">{exp.company}</div>
+                    {/* Date for mobile view (below title/company) */}
+                    <div className="md:hidden mb-4">
+                      <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary/5 border border-primary/10 group-hover:border-accent/50 transition-colors duration-300">
+                        <span className="font-mono text-xs text-accent font-bold tracking-widest uppercase">
+                          {exp.period}
+                        </span>
+                      </div>
+                    </div>
                     
                     {/* Achievements List */}
                     <ul className="list-disc list-outside ml-4 text-secondary leading-relaxed max-w-3xl text-lg space-y-3 marker:text-accent">
