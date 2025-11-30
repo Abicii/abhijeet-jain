@@ -26,8 +26,9 @@ const App: React.FC = () => {
 
       {/* Floating Download Resume Button */}
       <motion.a
-        href="/resume.pdf" // Replace with actual resume link
-        download
+        href="https://drive.google.com/drive/folders/1S4_e4hG0tFTldqKcYC7aUhlobe4kWJW5?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
         className="fixed bottom-8 right-8 z-40 bg-primary text-background p-4 rounded-full shadow-2xl hover:bg-accent hover:text-white transition-colors duration-300 group flex items-center justify-center overflow-hidden"
         initial={{ scale: 0, rotate: 180 }}
         animate={{ scale: 1, rotate: 0 }}
