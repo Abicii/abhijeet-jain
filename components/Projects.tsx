@@ -24,65 +24,61 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
       className="group relative flex flex-col gap-6"
     >
       {/* Image Container - Explicit White Background */}
-      <motion.div 
+      <div 
         style={{ y }}
         className="relative h-[300px] w-full overflow-hidden rounded-sm bg-white border border-primary/10 shadow-sm"
       >
         <div className="w-full h-full p-6 flex items-center justify-center bg-white">
-             <img
-              src={project.imageUrl}
-              alt={project.title}
-              className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
-              loading="lazy"
-            />
+          <img
+            src={project.imageUrl}
+            alt={project.title}
+            className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
         </div>
-        
         {/* Subtle inner border for depth */}
         <div className="absolute inset-0 border border-black/5 pointer-events-none z-10" />
-      </motion.div>
-      
+      </div>
       <div className="flex flex-col flex-grow">
         <div className="flex justify-between items-baseline border-b border-primary/10 pb-4 mb-4">
-            <h3 className="text-2xl font-bold text-primary group-hover:text-accent transition-colors font-display tracking-tight">
-                {project.title}
-            </h3>
-            <span className="text-xs font-mono text-accent tracking-wider uppercase hidden sm:inline-block">{project.category}</span>
+          <h3 className="text-2xl font-bold text-primary group-hover:text-accent transition-colors font-display tracking-tight">
+            {project.title}
+          </h3>
+          <span className="text-xs font-mono text-accent tracking-wider uppercase hidden sm:inline-block">{project.category}</span>
         </div>
-        
         <p className="text-secondary mb-6 line-clamp-3 leading-relaxed flex-grow">{project.description}</p>
-        
         <div className="space-y-6">
-             <div className="flex flex-wrap gap-2">
-                {project.tags.slice(0, 3).map(tag => (
-                <span key={tag} className="text-xs font-medium text-secondary bg-surface border border-primary/10 px-2 py-1 rounded">#{tag}</span>
-                ))}
-            </div>
-
-            {/* Action Buttons - Always Visible */}
-            <div className="flex gap-4">
-                 {project.link && (
-                    <a 
-                        href={project.link} 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-primary text-background text-sm font-bold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
-                    >
-                        <ExternalLink size={16} /> Live Demo
-                    </a>
-                 )}
-                 {project.githubUrl && (
-                    <a 
-                        href={project.githubUrl} 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-transparent border border-primary/20 text-primary text-sm font-bold rounded-full hover:bg-primary/10 hover:border-primary transition-all duration-300"
-                    >
-                        <Github size={16} /> Source Code
-                    </a>
-                 )}
-            </div>
+          <div className="flex flex-wrap gap-2">
+            {project.tags.slice(0, 3).map(tag => (
+              <span key={tag} className="text-xs font-medium text-secondary bg-surface border border-primary/10 px-2 py-1 rounded">#{tag}</span>
+            ))}
+          </div>
+          {/* Action Buttons - Always Visible */}
+          <div className="flex gap-4">
+            {project.link && (
+              <a 
+                href={project.link} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-primary text-background text-sm font-bold rounded-full hover:bg-accent hover:text-white transition-all duration-300"
+              >
+                <ExternalLink size={16} /> Live Demo
+              </a>
+            )}
+            {project.githubUrl && (
+              <a 
+                href={project.githubUrl} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-transparent border border-primary/20 text-primary text-sm font-bold rounded-full hover:bg-primary/10 hover:border-primary transition-all duration-300"
+              >
+                <Github size={16} /> Source Code
+              </a>
+            )}
+          </div>
         </div>
-      </motion.div>
+      </div>
+    </motion.div>
   );
 };
 
