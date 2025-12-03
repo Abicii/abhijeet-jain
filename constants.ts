@@ -4,11 +4,11 @@ import { Project, SkillCategory, SocialLink, NavItem, ExperienceItem } from "./t
 
 export const META = {
   name: "Abhijeet Jain",
-  role: "Frontend Developer & UI/UX Designer",
+  role: "Software Development Engineer",
   tagline: "Designer till lunch. Developer after.",
   email: "abhijeettt.9876@gmail.com",
   aboutShort: "I build enterprise products from scratch with a focus on premium aesthetics and scalable architecture.",
-  aboutLong: "I am a Frontend Developer and UI/UX Designer with deep experience in building enterprise-grade applications. I bridge the gap between creative design and engineering, ensuring that every pixel serves a purpose and every component is scalable. When I'm not coding, I design useful everyday objects—from tech tools to functional art.",
+  aboutLong: "I am a Software Developer with deep experience in building enterprise-grade applications. I bridge the gap between creative design and engineering, ensuring that every pixel serves a purpose and every component is scalable. When I'm not coding, I design useful everyday objects—from tech tools to functional art.",
 };
 
 export const NAV_ITEMS: NavItem[] = [
@@ -30,10 +30,10 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: "1",
     role: "Software Developer",
     company: "Cognizant",
-    period: "Jan ‘24 - Present",
+    period: "Jul ‘25 - Present",
     achievements: [
       "Designed and developed an enterprise-scale platform hosting multiple AI-powered applications, streamlining automation workflows for engineers working on SAP, Salesforce, and Oracle by 80%-90%.",
-      "Architected and delivered a centralized Admin Portal, enabling role-based access control and subscription-based feature management, which improved deployment flexibility and reduced client onboarding effort.",
+      "Architected and delivered a centralized Admin Portal, enabling role-based access control and subscription-based feature management, which improved deployment flexibility and reduced client onboarding effort by 50%.",
       "Built a collaborative Agentic AI interface with dual-pane design and backend integration using Azure OpenAI and Google ADK, enabling real-time multi-agent collaboration and faster automation script generation.",
       "Created a reusable React.js component library and standardized UI/UX patterns, reducing UI development time across applications by 60% and improving maintainability.",
       "Owned end-to-end UI/UX design (Figma to production) for the marketing site, platform, and admin tools, delivering responsive, user-friendly interfaces that improved adoption and usability."
@@ -44,10 +44,10 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: "2",
     role: "AI Research Intern",
     company: "Ishan Khosla Design",
-    period: "May ‘23 - Aug ‘23",
+    period: "May ‘23 - Jun ‘23",
     achievements: [
       "Developed an AI model to identify different types of tribal tattoo designs.",
-      "Worked on image styling algorithms to transform any input image into Baiga tribal tattoo designs.",
+      "Worked on image styling algorithms to transform any input image into Baiga tribal tattoo designs decreasing typeface design efforts by 90%-95%.",
       "Explored the intersection of tribal tattoo aesthetics and typeface design."
     ],
     skills: ["Python", "Machine Learning", "Neural Networks"]
@@ -58,8 +58,8 @@ export const EXPERIENCES: ExperienceItem[] = [
     company: "IBM",
     period: "Jun ‘22 – Jul ‘22",
     achievements: [
-      "Designed a neural network capable of learning multiple attributes of a single input.",
-      "Achieved accuracy better than existing complex models for small datasets using support vector machines."
+      "Designed a neural network capable of learning multiple attributes of a single input image.",
+      "Achieved 23% better accuracy than existing complex models for small datasets using support vector machines."
     ],
     skills: ["Python", "Machine Learning", "Neural Networks"]
   }
