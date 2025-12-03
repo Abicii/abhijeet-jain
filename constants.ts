@@ -4,7 +4,22 @@ import { Project, SkillCategory, SocialLink, NavItem, ExperienceItem } from "./t
 
 export const META = {
   name: "Abhijeet Jain",
-  role: "Software Development Engineer",
+  role: (() => {
+    // Calculate experience from July 2023 to now
+    const start = new Date(2023, 6, 1); // July is month 6 (0-indexed)
+    const now = new Date();
+    let years = now.getFullYear() - start.getFullYear();
+    let months = now.getMonth() - start.getMonth();
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+    // Round to nearest .5 for display
+    let display = years;
+    if (months >= 9) display += 1;
+    else if (months >= 3) display += 0.5;
+    return `Software Development Engineer (${display} years of experience)`;
+  })(),
   tagline: "Designer till lunch. Developer after.",
   email: "abhijeettt.9876@gmail.com",
   aboutShort: "I build enterprise products from scratch with a focus on premium aesthetics and scalable architecture.",
@@ -30,7 +45,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: "1",
     role: "Software Developer",
     company: "Cognizant",
-    period: "Jul ‘25 - Present",
+    period: "Jul ‘23 - Present",
     achievements: [
       "Designed and developed an enterprise-scale platform hosting multiple AI-powered applications, streamlining automation workflows for engineers working on SAP, Salesforce, and Oracle by 80%-90%.",
       "Architected and delivered a centralized Admin Portal, enabling role-based access control and subscription-based feature management, which improved deployment flexibility and reduced client onboarding effort by 50%.",
@@ -114,11 +129,11 @@ export const SKILLS: SkillCategory[] = [
     skills: ["Agile - Scrum/Kanban"],
   },
   {
-    title: "Frontend Development",
-    skills: ["React.js", "Node.js", "HTML5", "CSS3", "jQuery", "Bootstrap", "Redux", "TypeScript"],
+    title: "Development",
+    skills: ["React.js", "HTML5", "CSS3", "Bootstrap", "Redux", "TypeScript", "Node.js", "Flask"],
   },
   {
     title: "Tools & Platforms",
-    skills: ["Github", "Figma", "Postman", "Visual Studio Code", "Cursor"],
+    skills: ["Github", "Figma", "Postman", "Visual Studio Code", "Cursor","Vercel","GitHub Actions", "CI/CD Pipelines"],
   },
 ];
