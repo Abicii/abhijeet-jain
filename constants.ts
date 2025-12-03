@@ -6,7 +6,7 @@ export const META = {
   name: "Abhijeet Jain",
   role: (() => {
     // Calculate experience from July 2023 to now
-    const start = new Date(2023, 6, 1); // July is month 6 (0-indexed)
+    const start = new Date(2024, 0, 1); // July is month 6 (0-indexed)
     const now = new Date();
     let years = now.getFullYear() - start.getFullYear();
     let months = now.getMonth() - start.getMonth();
@@ -45,7 +45,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: "1",
     role: "Software Developer",
     company: "Cognizant",
-    period: "Jul ‘23 - Present",
+    period: "Jan ‘24 - Present",
     achievements: [
       "Designed and developed an enterprise-scale platform hosting multiple AI-powered applications, streamlining automation workflows for engineers working on SAP, Salesforce, and Oracle by 80%-90%.",
       "Architected and delivered a centralized Admin Portal, enabling role-based access control and subscription-based feature management, which improved deployment flexibility and reduced client onboarding effort by 50%.",
@@ -59,7 +59,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: "2",
     role: "AI Research Intern",
     company: "Ishan Khosla Design",
-    period: "May ‘23 - Jun ‘23",
+    period: "May ‘23 - Aug ‘23",
     achievements: [
       "Developed an AI model to identify different types of tribal tattoo designs.",
       "Worked on image styling algorithms to transform any input image into Baiga tribal tattoo designs decreasing typeface design efforts by 90%-95%.",
