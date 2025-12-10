@@ -47,11 +47,11 @@ export const EXPERIENCES: ExperienceItem[] = [
     company: "Cognizant",
     period: "Jan ‘24 - Present",
     achievements: [
-      "Designed and developed an enterprise-scale platform hosting multiple AI-powered applications, streamlining automation workflows for engineers working on SAP, Salesforce, and Oracle by 80%-90%.",
-      "Architected and delivered a centralized Admin Portal, enabling role-based access control and subscription-based feature management, which improved deployment flexibility and reduced client onboarding effort by 50%.",
-      "Built a collaborative Agentic AI interface with dual-pane design and backend integration using Azure OpenAI and Google ADK, enabling real-time multi-agent collaboration and faster automation script generation.",
-      "Created a reusable React.js component library and standardized UI/UX patterns, reducing UI development time across applications by 60% and improving maintainability.",
-      "Owned end-to-end UI/UX design (Figma to production) for the marketing site, platform, and admin tools, delivering responsive, user-friendly interfaces that improved adoption and usability."
+      "Designed and developed the full frontend foundation for an enterprise multi-app SaaS AI platform owning component architecture, UI state management, modular workflow design, and API integration patterns which enabled automation gains of 80–90% for engineering teams.",
+      "Delivered three zero-to-one products from concept to IP-ready state, driving architecture, frontend development, and UI/UX for all releases.",
+      "Built a production-grade dual-pane Agentic-AI interface owning interaction architecture, multi-agent state management, and API orchestration with Azure OpenAI + Google ADK to enable real-time collaboration.",
+      "Architected and delivered a centralized Admin Portal with RBAC and subscription-based feature controls, improving deployment flexibility and cutting onboarding time by ~70%.",
+      "Created a modular React component library and standardized UI/UX patterns, reducing UI development time by ~60% and improving maintainability across teams."
     ],
     skills: ["React.js", "Javascript", "Python (Flask)", "UI/UX Design", "Azure OpenAI", "Google ADK", "API Integration"]
   },
@@ -59,7 +59,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: "2",
     role: "AI Research Intern",
     company: "Ishan Khosla Design",
-    period: "May ‘23 - Aug ‘23",
+    period: "Jul ‘23 - Nov ‘23",
     achievements: [
       "Developed an AI model to identify different types of tribal tattoo designs.",
       "Worked on image styling algorithms to transform any input image into Baiga tribal tattoo designs decreasing typeface design efforts by 90%-95%.",
